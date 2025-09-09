@@ -158,3 +158,24 @@ Thumbs.db
 .env.staging
 config.json
 secrets.json
+
+# Personal and league data - NEVER commit these to public repository
+data/
+backups/
+exports/
+*.json
+*.csv
+*.xlsx
+*.xls
+
+# League-specific files
+league_info.json
+users.json
+rosters.json
+transactions.json
+user_mapping.json
+skins_game_results.json
+week_*_game_results.json
+week_*_matchups.json
+week_*_odds.json
+week_*_analysis.xlsx

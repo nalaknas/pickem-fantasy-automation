@@ -105,7 +105,19 @@ If you prefer manual setup:
 2. Fill in your `SLEEPER_LEAGUE_ID`
 3. Optionally add Twilio credentials for notifications
 
-**Important**: The `.env` file is automatically excluded from version control to keep your data secure.
+**Important**: The `.env` file and all personal data are automatically excluded from version control to keep your data secure.
+
+## 🔒 Privacy Protection
+
+This repository is designed to protect all personal and league-specific information:
+
+- **No personal data** is committed to version control
+- **No league member names** are visible in the public repository  
+- **No actual results** are stored in the repository
+- **Safe for public viewing** and cloning
+- **All sensitive data** stays local to your machine
+
+See [PRIVACY.md](PRIVACY.md) for complete privacy information.
 
 ## Project Structure
 
@@ -117,16 +129,23 @@ pickem_fantasy_automation/
 │   ├── secure_config.py    # Secure configuration management
 │   └── ...
 ├── tests/                  # Test files and examples
-├── data/                   # League data and results
-├── exports/                # Generated reports (CSV/Excel)
+├── examples/               # Example files (safe for public)
+│   ├── data/               # Example data structures
+│   └── exports/            # Example export formats
 ├── config/                 # Configuration templates
 ├── scripts/                # Setup and utility scripts
 ├── docs/                   # Documentation
-├── backups/                # Data backups
 ├── main.py                 # Main entry point
 ├── requirements.txt        # Python dependencies
 ├── SECURITY.md            # Security documentation
+├── PRIVACY.md             # Privacy protection guide
 └── README.md              # This file
+
+# Local directories (not in repository):
+# data/                     # Your league data (private)
+# exports/                  # Your generated reports (private)
+# backups/                  # Your backup files (private)
+# .env                      # Your configuration (private)
 ```
 
 ## Data Files
