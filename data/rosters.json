@@ -1,0 +1,597 @@
+[
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 10.0,
+        "v1:regular:10": 9.0,
+        "v1:regular:11": 9.0,
+        "v1:regular:12": 6.0,
+        "v1:regular:13": 10.0,
+        "v1:regular:14": 7.0,
+        "v1:regular:15": 8.0,
+        "v1:regular:16": 9.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 10.0,
+        "v1:regular:2": 7.0,
+        "v1:regular:3": 8.0,
+        "v1:regular:4": 6.0,
+        "v1:regular:5": 4.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 11.0,
+        "v1:regular:8": 9.0,
+        "v1:regular:9": 7.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "ARI",
+          "CAR",
+          "CLE",
+          "WAS",
+          "KC",
+          "DET",
+          "GB",
+          "JAX",
+          "NE",
+          "MIA",
+          "LAC",
+          "NYG",
+          "CIN",
+          "LAR",
+          "NO",
+          "HOU"
+        ]
+      }
+    },
+    "owner_id": "865061949451403264",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 1,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 10.0,
+        "v1:regular:10": 4.0,
+        "v1:regular:11": 6.0,
+        "v1:regular:12": 7.0,
+        "v1:regular:13": 7.0,
+        "v1:regular:14": 0.0,
+        "v1:regular:15": 0.0,
+        "v1:regular:16": 0.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 7.0,
+        "v1:regular:4": 7.0,
+        "v1:regular:5": 9.0,
+        "v1:regular:6": 7.0,
+        "v1:regular:7": 10.0,
+        "v1:regular:8": 6.0,
+        "v1:regular:9": 4.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "869966996937306112",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 2,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 11.0,
+        "v1:regular:10": 4.0,
+        "v1:regular:11": 7.0,
+        "v1:regular:12": 7.0,
+        "v1:regular:13": 7.0,
+        "v1:regular:14": 5.0,
+        "v1:regular:15": 8.0,
+        "v1:regular:16": 5.0,
+        "v1:regular:17": 10.0,
+        "v1:regular:18": 7.0,
+        "v1:regular:2": 5.0,
+        "v1:regular:3": 8.0,
+        "v1:regular:4": 6.0,
+        "v1:regular:5": 9.0,
+        "v1:regular:6": 8.0,
+        "v1:regular:7": 13.0,
+        "v1:regular:8": 9.0,
+        "v1:regular:9": 7.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "ARI",
+          "ATL",
+          "BAL",
+          "WAS",
+          "DEN",
+          "DET",
+          "GB",
+          "BUF",
+          "MIA",
+          "LAC",
+          "NYG",
+          "CIN",
+          "LAR",
+          "TB",
+          "TEN"
+        ]
+      }
+    },
+    "owner_id": "997251019148951552",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 3,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 8.0,
+        "v1:regular:10": 7.0,
+        "v1:regular:11": 11.0,
+        "v1:regular:12": 7.0,
+        "v1:regular:13": 11.0,
+        "v1:regular:14": 6.0,
+        "v1:regular:15": 10.0,
+        "v1:regular:16": 7.0,
+        "v1:regular:17": 12.0,
+        "v1:regular:18": 7.0,
+        "v1:regular:2": 4.0,
+        "v1:regular:3": 8.0,
+        "v1:regular:4": 6.0,
+        "v1:regular:5": 7.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 8.0,
+        "v1:regular:8": 10.0,
+        "v1:regular:9": 8.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "SF",
+          "CAR",
+          "BAL",
+          "WAS",
+          "KC",
+          "MIN",
+          "GB",
+          "IND",
+          "BUF",
+          "MIA",
+          "LAC",
+          "PHI",
+          "CIN",
+          "LAR",
+          "TB",
+          "HOU"
+        ]
+      }
+    },
+    "owner_id": "869828424313806848",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 4,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 10.0,
+        "v1:regular:10": 9.0,
+        "v1:regular:11": 7.0,
+        "v1:regular:12": 5.0,
+        "v1:regular:13": 13.0,
+        "v1:regular:14": 4.0,
+        "v1:regular:15": 7.0,
+        "v1:regular:16": 9.0,
+        "v1:regular:17": 7.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 7.0,
+        "v1:regular:4": 6.0,
+        "v1:regular:5": 7.0,
+        "v1:regular:6": 9.0,
+        "v1:regular:7": 9.0,
+        "v1:regular:8": 7.0,
+        "v1:regular:9": 7.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "869826033292107776",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 5,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 5.0,
+        "v1:regular:10": 9.0,
+        "v1:regular:11": 8.0,
+        "v1:regular:12": 8.0,
+        "v1:regular:13": 7.0,
+        "v1:regular:14": 8.0,
+        "v1:regular:15": 4.0,
+        "v1:regular:16": 5.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 12.0,
+        "v1:regular:3": 6.0,
+        "v1:regular:4": 10.0,
+        "v1:regular:5": 7.0,
+        "v1:regular:6": 3.0,
+        "v1:regular:7": 7.0,
+        "v1:regular:8": 11.0,
+        "v1:regular:9": 6.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "1005301970434940928",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 6,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 8.0,
+        "v1:regular:10": 7.0,
+        "v1:regular:11": 8.0,
+        "v1:regular:12": 6.0,
+        "v1:regular:13": 7.0,
+        "v1:regular:14": 9.0,
+        "v1:regular:15": 8.0,
+        "v1:regular:16": 6.0,
+        "v1:regular:17": 8.0,
+        "v1:regular:18": 9.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 8.0,
+        "v1:regular:4": 9.0,
+        "v1:regular:5": 10.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 11.0,
+        "v1:regular:8": 7.0,
+        "v1:regular:9": 9.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "SF",
+          "CAR",
+          "CLE",
+          "WAS",
+          "KC",
+          "DET",
+          "CHI",
+          "JAX",
+          "BUF",
+          "MIA",
+          "LAC",
+          "PHI",
+          "CIN",
+          "LAR",
+          "TB",
+          "HOU"
+        ]
+      }
+    },
+    "owner_id": "732373454870937600",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 7,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 11.0,
+        "v1:regular:10": 9.0,
+        "v1:regular:11": 7.0,
+        "v1:regular:12": 6.0,
+        "v1:regular:13": 9.0,
+        "v1:regular:14": 8.0,
+        "v1:regular:15": 13.0,
+        "v1:regular:16": 7.0,
+        "v1:regular:17": 12.0,
+        "v1:regular:18": 9.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 9.0,
+        "v1:regular:4": 4.0,
+        "v1:regular:5": 5.0,
+        "v1:regular:6": 8.0,
+        "v1:regular:7": 10.0,
+        "v1:regular:8": 11.0,
+        "v1:regular:9": 11.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "ARI",
+          "ATL",
+          "CLE",
+          "WAS",
+          "DEN",
+          "MIN",
+          "GB",
+          "JAX",
+          "BUF",
+          "MIA",
+          "LAC",
+          "PHI",
+          "CIN",
+          "SEA",
+          "TB",
+          "HOU"
+        ]
+      }
+    },
+    "owner_id": "998356905544261632",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 8,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 5.0,
+        "v1:regular:10": 6.0,
+        "v1:regular:11": 3.0,
+        "v1:regular:12": 6.0,
+        "v1:regular:13": 9.0,
+        "v1:regular:14": 0.0,
+        "v1:regular:15": 0.0,
+        "v1:regular:16": 0.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 7.0,
+        "v1:regular:4": 11.0,
+        "v1:regular:5": 7.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 8.0,
+        "v1:regular:8": 8.0,
+        "v1:regular:9": 7.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "1125900327032598528",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 9,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 8.0,
+        "v1:regular:10": 10.0,
+        "v1:regular:11": 8.0,
+        "v1:regular:12": 5.0,
+        "v1:regular:13": 6.0,
+        "v1:regular:14": 7.0,
+        "v1:regular:15": 11.0,
+        "v1:regular:16": 8.0,
+        "v1:regular:17": 11.0,
+        "v1:regular:18": 9.0,
+        "v1:regular:2": 9.0,
+        "v1:regular:3": 5.0,
+        "v1:regular:4": 8.0,
+        "v1:regular:5": 5.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 10.0,
+        "v1:regular:8": 11.0,
+        "v1:regular:9": 9.0
+      },
+      "previous_picks": {
+        "v1:regular:18": [
+          "ARI",
+          "CAR",
+          "CLE",
+          "DAL",
+          "KC",
+          "MIN",
+          "CHI",
+          "JAX",
+          "BUF",
+          "NYJ",
+          "LAC",
+          "PHI",
+          "CIN",
+          "LAR",
+          "TB",
+          "HOU"
+        ]
+      }
+    },
+    "owner_id": "998358619718594560",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 10,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 9.0,
+        "v1:regular:10": 6.0,
+        "v1:regular:11": 3.0,
+        "v1:regular:12": 0.0,
+        "v1:regular:13": 0.0,
+        "v1:regular:14": 0.0,
+        "v1:regular:15": 0.0,
+        "v1:regular:16": 0.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 5.0,
+        "v1:regular:3": 6.0,
+        "v1:regular:4": 9.0,
+        "v1:regular:5": 5.0,
+        "v1:regular:6": 10.0,
+        "v1:regular:7": 11.0,
+        "v1:regular:8": 6.0,
+        "v1:regular:9": 6.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "712350580550471680",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 11,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 8.0,
+        "v1:regular:10": 0.0,
+        "v1:regular:11": 0.0,
+        "v1:regular:12": 0.0,
+        "v1:regular:13": 0.0,
+        "v1:regular:14": 0.0,
+        "v1:regular:15": 0.0,
+        "v1:regular:16": 0.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 6.0,
+        "v1:regular:3": 7.0,
+        "v1:regular:4": 8.0,
+        "v1:regular:5": 6.0,
+        "v1:regular:6": 7.0,
+        "v1:regular:7": 9.0,
+        "v1:regular:8": 10.0,
+        "v1:regular:9": 1.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "469912783350132736",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 12,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  },
+  {
+    "co_owners": null,
+    "keepers": null,
+    "league_id": "1137502853016403968",
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 1.0,
+        "v1:regular:10": 0.0,
+        "v1:regular:11": 0.0,
+        "v1:regular:12": 0.0,
+        "v1:regular:13": 0.0,
+        "v1:regular:14": 0.0,
+        "v1:regular:15": 0.0,
+        "v1:regular:16": 0.0,
+        "v1:regular:17": 0.0,
+        "v1:regular:18": 0.0,
+        "v1:regular:2": 2.0,
+        "v1:regular:3": 7.0,
+        "v1:regular:4": 0.0,
+        "v1:regular:5": 0.0,
+        "v1:regular:6": 0.0,
+        "v1:regular:7": 0.0,
+        "v1:regular:8": 0.0,
+        "v1:regular:9": 0.0
+      },
+      "previous_picks": {
+        "v1:regular:18": []
+      }
+    },
+    "owner_id": "870871224618766336",
+    "player_map": null,
+    "players": null,
+    "reserve": null,
+    "roster_id": 13,
+    "settings": null,
+    "starters": null,
+    "taxi": null
+  }
+]

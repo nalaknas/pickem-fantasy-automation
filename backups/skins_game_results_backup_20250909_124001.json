@@ -1,0 +1,1375 @@
+[
+  {
+    "week": 18,
+    "season": 2024,
+    "date_processed": "2025-09-08T18:02:30.979108",
+    "high_score_winners": [
+      "865061949451403264"
+    ],
+    "high_score": 10.0,
+    "underdog_winners": [
+      "997251019148951552"
+    ],
+    "underdog_correct": 2,
+    "total_underdog_games": 8,
+    "winner_names": {
+      "high_score": [
+        "nalaknas"
+      ],
+      "underdog": [
+        "PSekhar7"
+      ]
+    }
+  },
+  {
+    "week": 18,
+    "season": 2024,
+    "date_processed": "2025-09-08T18:03:05.471647",
+    "high_score_winners": [
+      "865061949451403264"
+    ],
+    "high_score": 10.0,
+    "underdog_winners": [
+      "997251019148951552"
+    ],
+    "underdog_correct": 2,
+    "total_underdog_games": 8,
+    "winner_names": {
+      "high_score": [
+        "nalaknas"
+      ],
+      "underdog": [
+        "PSekhar7"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": 2024,
+    "date_processed": "2025-09-08T18:24:31.353154",
+    "high_score_winners": [
+      "997251019148951552",
+      "998356905544261632"
+    ],
+    "high_score": 11.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "869966996937306112",
+      "997251019148951552",
+      "869828424313806848",
+      "869826033292107776",
+      "1005301970434940928",
+      "732373454870937600",
+      "998356905544261632",
+      "1125900327032598528",
+      "998358619718594560",
+      "712350580550471680",
+      "469912783350132736",
+      "870871224618766336"
+    ],
+    "underdog_correct": 0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "PSekhar7",
+        "rroy820"
+      ],
+      "underdog": [
+        "nalaknas",
+        "abhia",
+        "PSekhar7",
+        "scooty11",
+        "TuaFreakovailoa",
+        "benbrowndorf",
+        "ansh31",
+        "rroy820",
+        "kushminzada",
+        "arjunkrishnan",
+        "dirtypoonjabi",
+        "shreykap",
+        "navinp"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": 2024,
+    "date_processed": "2025-09-08T18:31:16.352922",
+    "high_score_winners": [
+      "997251019148951552",
+      "998356905544261632"
+    ],
+    "high_score": 11.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "869966996937306112",
+      "997251019148951552",
+      "869828424313806848",
+      "869826033292107776",
+      "1005301970434940928",
+      "732373454870937600",
+      "998356905544261632",
+      "1125900327032598528",
+      "998358619718594560",
+      "712350580550471680",
+      "469912783350132736",
+      "870871224618766336"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "PSekhar7",
+        "rroy820"
+      ],
+      "underdog": [
+        "nalaknas",
+        "abhia",
+        "PSekhar7",
+        "scooty11",
+        "TuaFreakovailoa",
+        "benbrowndorf",
+        "ansh31",
+        "rroy820",
+        "kushminzada",
+        "arjunkrishnan",
+        "dirtypoonjabi",
+        "shreykap",
+        "navinp"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": 2024,
+    "date_processed": "2025-09-08T18:31:38.352303",
+    "high_score_winners": [
+      "997251019148951552",
+      "998356905544261632"
+    ],
+    "high_score": 11.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "869966996937306112",
+      "997251019148951552",
+      "869828424313806848",
+      "869826033292107776",
+      "1005301970434940928",
+      "732373454870937600",
+      "998356905544261632",
+      "1125900327032598528",
+      "998358619718594560",
+      "712350580550471680",
+      "469912783350132736",
+      "870871224618766336"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "PSekhar7",
+        "rroy820"
+      ],
+      "underdog": [
+        "nalaknas",
+        "abhia",
+        "PSekhar7",
+        "scooty11",
+        "TuaFreakovailoa",
+        "benbrowndorf",
+        "ansh31",
+        "rroy820",
+        "kushminzada",
+        "arjunkrishnan",
+        "dirtypoonjabi",
+        "shreykap",
+        "navinp"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": 2024,
+    "date_processed": "2025-09-09T12:25:14.718515",
+    "high_score_winners": [
+      "997251019148951552",
+      "998356905544261632"
+    ],
+    "high_score": 11.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "869966996937306112",
+      "997251019148951552",
+      "869828424313806848",
+      "869826033292107776",
+      "1005301970434940928",
+      "732373454870937600",
+      "998356905544261632",
+      "1125900327032598528",
+      "998358619718594560",
+      "712350580550471680",
+      "469912783350132736",
+      "870871224618766336"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "PSekhar7",
+        "rroy820"
+      ],
+      "underdog": [
+        "nalaknas",
+        "abhia",
+        "PSekhar7",
+        "scooty11",
+        "TuaFreakovailoa",
+        "benbrowndorf",
+        "ansh31",
+        "rroy820",
+        "kushminzada",
+        "arjunkrishnan",
+        "dirtypoonjabi",
+        "shreykap",
+        "navinp"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": 2024,
+    "date_processed": "2025-09-09T12:27:41.864637",
+    "high_score_winners": [
+      "1005271556681232384"
+    ],
+    "high_score": 9.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "469912783350132736",
+      "712350580550471680",
+      "732373454870937600",
+      "869826033292107776",
+      "869828424313806848",
+      "869966996937306112",
+      "870871224618766336",
+      "997251019148951552",
+      "998356905544261632",
+      "998358619718594560",
+      "1005301970434940928",
+      "1125900327032598528",
+      "1005301584701521920",
+      "1264290350940303360",
+      "999732708634857472",
+      "1267274998884597761",
+      "476061516697694208",
+      "1004072320345923584",
+      "872372643964309504",
+      "1267968626674106368",
+      "1022238772861173760",
+      "995474843778834432",
+      "737872397943951360",
+      "1266525438008635392",
+      "1132863700278472704",
+      "1268717295987859456",
+      "859884422164525056",
+      "1268736003586146304",
+      "1268976949267546112",
+      "1269278657013100544",
+      "1005271556681232384",
+      "1269350557387075584",
+      "1000822606448156672",
+      "1270203937265287168"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "kvstabla"
+      ],
+      "underdog": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:28:49.212436",
+    "high_score_winners": [
+      "1005271556681232384"
+    ],
+    "high_score": 9.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "469912783350132736",
+      "712350580550471680",
+      "732373454870937600",
+      "869826033292107776",
+      "869828424313806848",
+      "869966996937306112",
+      "870871224618766336",
+      "997251019148951552",
+      "998356905544261632",
+      "998358619718594560",
+      "1005301970434940928",
+      "1125900327032598528",
+      "1005301584701521920",
+      "1264290350940303360",
+      "999732708634857472",
+      "1267274998884597761",
+      "476061516697694208",
+      "1004072320345923584",
+      "872372643964309504",
+      "1267968626674106368",
+      "1022238772861173760",
+      "995474843778834432",
+      "737872397943951360",
+      "1266525438008635392",
+      "1132863700278472704",
+      "1268717295987859456",
+      "859884422164525056",
+      "1268736003586146304",
+      "1268976949267546112",
+      "1269278657013100544",
+      "1005271556681232384",
+      "1269350557387075584",
+      "1000822606448156672",
+      "1270203937265287168"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "kvstabla"
+      ],
+      "underdog": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:29:59.972839",
+    "high_score_winners": [
+      "1005271556681232384"
+    ],
+    "high_score": 9.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "469912783350132736",
+      "712350580550471680",
+      "732373454870937600",
+      "869826033292107776",
+      "869828424313806848",
+      "869966996937306112",
+      "870871224618766336",
+      "997251019148951552",
+      "998356905544261632",
+      "998358619718594560",
+      "1005301970434940928",
+      "1125900327032598528",
+      "1005301584701521920",
+      "1264290350940303360",
+      "999732708634857472",
+      "1267274998884597761",
+      "476061516697694208",
+      "1004072320345923584",
+      "872372643964309504",
+      "1267968626674106368",
+      "1022238772861173760",
+      "995474843778834432",
+      "737872397943951360",
+      "1266525438008635392",
+      "1132863700278472704",
+      "1268717295987859456",
+      "859884422164525056",
+      "1268736003586146304",
+      "1268976949267546112",
+      "1269278657013100544",
+      "1005271556681232384",
+      "1269350557387075584",
+      "1000822606448156672",
+      "1270203937265287168"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "kvstabla"
+      ],
+      "underdog": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ]
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:30:21.692526",
+    "high_score_winners": [
+      "1005271556681232384"
+    ],
+    "high_score": 9.0,
+    "underdog_winners": [
+      "865061949451403264",
+      "469912783350132736",
+      "712350580550471680",
+      "732373454870937600",
+      "869826033292107776",
+      "869828424313806848",
+      "869966996937306112",
+      "870871224618766336",
+      "997251019148951552",
+      "998356905544261632",
+      "998358619718594560",
+      "1005301970434940928",
+      "1125900327032598528",
+      "1005301584701521920",
+      "1264290350940303360",
+      "999732708634857472",
+      "1267274998884597761",
+      "476061516697694208",
+      "1004072320345923584",
+      "872372643964309504",
+      "1267968626674106368",
+      "1022238772861173760",
+      "995474843778834432",
+      "737872397943951360",
+      "1266525438008635392",
+      "1132863700278472704",
+      "1268717295987859456",
+      "859884422164525056",
+      "1268736003586146304",
+      "1268976949267546112",
+      "1269278657013100544",
+      "1005271556681232384",
+      "1269350557387075584",
+      "1000822606448156672",
+      "1270203937265287168"
+    ],
+    "underdog_percentage": 0.0,
+    "total_underdog_games": 16,
+    "winner_names": {
+      "high_score": [
+        "kvstabla"
+      ],
+      "underdog": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ]
+    }
+  },
+  {
+    "week": 2,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:33:18.711384",
+    "rankings": {
+      "highest": [
+        "865061949451403264",
+        "469912783350132736",
+        "712350580550471680",
+        "732373454870937600",
+        "869826033292107776",
+        "869828424313806848",
+        "869966996937306112",
+        "870871224618766336",
+        "997251019148951552",
+        "998356905544261632",
+        "998358619718594560",
+        "1005301970434940928",
+        "1125900327032598528",
+        "1005301584701521920",
+        "1264290350940303360",
+        "999732708634857472",
+        "1267274998884597761",
+        "476061516697694208",
+        "1004072320345923584",
+        "872372643964309504",
+        "1267968626674106368",
+        "1022238772861173760",
+        "995474843778834432",
+        "737872397943951360",
+        "1266525438008635392",
+        "1132863700278472704",
+        "1268717295987859456",
+        "859884422164525056",
+        "1268736003586146304",
+        "1268976949267546112",
+        "1269278657013100544",
+        "1005271556681232384",
+        "1269350557387075584",
+        "1000822606448156672",
+        "1270203937265287168"
+      ],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [
+        "865061949451403264",
+        "469912783350132736",
+        "712350580550471680",
+        "732373454870937600",
+        "869826033292107776",
+        "869828424313806848",
+        "869966996937306112",
+        "870871224618766336",
+        "997251019148951552",
+        "998356905544261632",
+        "998358619718594560",
+        "1005301970434940928",
+        "1125900327032598528",
+        "1005301584701521920",
+        "1264290350940303360",
+        "999732708634857472",
+        "1267274998884597761",
+        "476061516697694208",
+        "1004072320345923584",
+        "872372643964309504",
+        "1267968626674106368",
+        "1022238772861173760",
+        "995474843778834432",
+        "737872397943951360",
+        "1266525438008635392",
+        "1132863700278472704",
+        "1268717295987859456",
+        "859884422164525056",
+        "1268736003586146304",
+        "1268976949267546112",
+        "1269278657013100544",
+        "1005271556681232384",
+        "1269350557387075584",
+        "1000822606448156672",
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 0.0,
+      "second_highest": 0,
+      "third_highest": 0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:33:46.497458",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:34:56.919863",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:35:11.106790",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:35:33.612699",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:35:41.557853",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:35:55.443379",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 0.0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:37:28.132235",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "865061949451403264"
+      ],
+      "no_picks": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 1.0,
+      "no_picks": 0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "nalaknas"
+      ],
+      "no_picks": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 2,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:37:43.749484",
+    "rankings": {
+      "highest": [],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [],
+      "no_picks": [
+        "865061949451403264",
+        "469912783350132736",
+        "712350580550471680",
+        "732373454870937600",
+        "869826033292107776",
+        "869828424313806848",
+        "869966996937306112",
+        "870871224618766336",
+        "997251019148951552",
+        "998356905544261632",
+        "998358619718594560",
+        "1005301970434940928",
+        "1125900327032598528",
+        "1005301584701521920",
+        "1264290350940303360",
+        "999732708634857472",
+        "1267274998884597761",
+        "476061516697694208",
+        "1004072320345923584",
+        "872372643964309504",
+        "1267968626674106368",
+        "1022238772861173760",
+        "995474843778834432",
+        "737872397943951360",
+        "1266525438008635392",
+        "1132863700278472704",
+        "1268717295987859456",
+        "859884422164525056",
+        "1268736003586146304",
+        "1268976949267546112",
+        "1269278657013100544",
+        "1005271556681232384",
+        "1269350557387075584",
+        "1000822606448156672",
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 0,
+      "second_highest": 0,
+      "third_highest": 0,
+      "lowest": 0,
+      "no_picks": 0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [],
+      "no_picks": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 2,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:37:59.169769",
+    "rankings": {
+      "highest": [],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [],
+      "no_picks": [
+        "865061949451403264",
+        "469912783350132736",
+        "712350580550471680",
+        "732373454870937600",
+        "869826033292107776",
+        "869828424313806848",
+        "869966996937306112",
+        "870871224618766336",
+        "997251019148951552",
+        "998356905544261632",
+        "998358619718594560",
+        "1005301970434940928",
+        "1125900327032598528",
+        "1005301584701521920",
+        "1264290350940303360",
+        "999732708634857472",
+        "1267274998884597761",
+        "476061516697694208",
+        "1004072320345923584",
+        "872372643964309504",
+        "1267968626674106368",
+        "1022238772861173760",
+        "995474843778834432",
+        "737872397943951360",
+        "1266525438008635392",
+        "1132863700278472704",
+        "1268717295987859456",
+        "859884422164525056",
+        "1268736003586146304",
+        "1268976949267546112",
+        "1269278657013100544",
+        "1005271556681232384",
+        "1269350557387075584",
+        "1000822606448156672",
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 0,
+      "second_highest": 0,
+      "third_highest": 0,
+      "lowest": 0,
+      "no_picks": 0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [],
+      "second_highest": [],
+      "third_highest": [],
+      "lowest": [],
+      "no_picks": [
+        "nalaknas",
+        "shreykap",
+        "dirtypoonjabi",
+        "ansh31",
+        "Jaysterseason",
+        "scooty11",
+        "abhia",
+        "navinp",
+        "PSekhar7",
+        "rroy820",
+        "arjunkrishnan",
+        "benbrowndorf",
+        "kushminzada",
+        "RStrype",
+        "vpaul",
+        "BCIB",
+        "mikek8",
+        "adibembs",
+        "jonk15",
+        "rushp12345",
+        "BntObrn",
+        "TheGiver69",
+        "sowryav",
+        "Pranjal99",
+        "skumar17",
+        "crazylook3",
+        "sbalyan",
+        "janakshah",
+        "akulagar",
+        "tuanfinitynbeyond",
+        "josephdicicco",
+        "kvstabla",
+        "tylersportslover",
+        "patelvishnu902",
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:38:05.184428",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "865061949451403264"
+      ],
+      "no_picks": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 1.0,
+      "no_picks": 0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "nalaknas"
+      ],
+      "no_picks": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  },
+  {
+    "week": 1,
+    "season": "2025",
+    "date_processed": "2025-09-09T12:38:24.738464",
+    "rankings": {
+      "highest": [
+        "1005271556681232384"
+      ],
+      "second_highest": [
+        "997251019148951552"
+      ],
+      "third_highest": [
+        "1125900327032598528",
+        "1005301584701521920"
+      ],
+      "lowest": [
+        "865061949451403264"
+      ],
+      "no_picks": [
+        "1270203937265287168"
+      ]
+    },
+    "scores": {
+      "highest": 9.0,
+      "second_highest": 8.0,
+      "third_highest": 7.0,
+      "lowest": 1.0,
+      "no_picks": 0
+    },
+    "perfect_week_winners": [],
+    "winner_names": {
+      "highest": [
+        "kvstabla"
+      ],
+      "second_highest": [
+        "PSekhar7"
+      ],
+      "third_highest": [
+        "kushminzada",
+        "RStrype"
+      ],
+      "lowest": [
+        "nalaknas"
+      ],
+      "no_picks": [
+        "hugebeast1999"
+      ],
+      "perfect_week": []
+    }
+  }
+]

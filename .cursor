@@ -1,0 +1,367 @@
+# Sleeper Pickem Skins Game Automation
+## Product Requirements Document (PRD)
+
+---
+
+### **Product Overview**
+
+**Project Name**: Sleeper Skins Game Commissioner Bot  
+**Version**: 1.0  
+**Last Updated**: January 2025  
+**Owner**: League Commissioner  
+
+### **Executive Summary**
+
+Automate the weekly administration of a "skins game" overlay for a Sleeper fantasy football pickem league. The system tracks two weekly competitions (highest scorer and most correct underdog picks) with a carry-over mechanism for ties, plus detection of perfect weeks. All results are stored locally and automatically distributed via SMS notifications.
+
+---
+
+## **Problem Statement**
+
+### **Current Pain Points**
+- Manual calculation of weekly winners is time-consuming and error-prone
+- Skins game carry-over logic requires careful tracking across weeks
+- No centralized record of historical results and payouts
+- Manual notification of results to league members
+- Difficulty identifying underdog picks and perfect weeks
+- Risk of calculation errors affecting league trust and money
+
+### **Goals**
+- **Primary**: Fully automate weekly skins game calculations and notifications
+- **Secondary**: Maintain comprehensive historical records for transparency
+- **Tertiary**: Enable easy end-of-season payout calculations
+
+---
+
+## **Product Requirements**
+
+### **Functional Requirements**
+
+#### **FR-1: Data Integration**
+- **FR-1.1**: Connect to Sleeper API to pull league data
+- **FR-1.2**: Extract weekly scoring data from `points_by_leg` metadata
+- **FR-1.3**: Extract user picks from `previous_picks` metadata  
+- **FR-1.4**: Map Sleeper `owner_id` to user display names
+- **FR-1.5**: Auto-detect current week from `current_pickem_leg_id`
+
+#### **FR-2: Skins Game Logic**
+- **FR-2.1**: Calculate highest scorer for each week
+- **FR-2.2**: Handle ties by carrying over the skin to next week
+- **FR-2.3**: Track underdog picks based on manually input odds data
+- **FR-2.4**: Calculate most correct underdog picks per user
+- **FR-2.5**: Detect perfect weeks (100% correct picks)
+- **FR-2.6**: Accumulate skin values across carry-over weeks
+
+#### **FR-3: Payout Structure**
+- **FR-3.1**: High Score Weekly: $10 (carries over if tie)
+- **FR-3.2**: Underdog Weekly: $3 (carries over if tie)  
+- **FR-3.3**: Perfect Week Bonus: $40 (no carry-over)
+- **FR-3.4**: Track cumulative winnings per user
+- **FR-3.5**: Generate end-of-season payout reports
+
+#### **FR-4: Data Storage**
+- **FR-4.1**: Store all results in local Excel file with multiple sheets:
+  - Weekly_Results: Complete weekly breakdown
+  - Skins_Tracking: Carry-over amounts by week
+  - User_Stats: Cumulative user performance
+- **FR-4.2**: Maintain historical data for multiple seasons
+- **FR-4.3**: Export capabilities for accounting/transparency
+
+#### **FR-5: Notifications**
+- **FR-5.1**: Send SMS notifications via Twilio integration
+- **FR-5.2**: Include weekly winners, payouts, and next week's skin values
+- **FR-5.3**: Highlight special events (perfect weeks, large carry-overs)
+- **FR-5.4**: Support multiple recipient phone numbers
+
+#### **FR-6: Manual Odds Integration**
+- **FR-6.1**: Accept manually input game odds and results
+- **FR-6.2**: Validate odds file format and completeness
+- **FR-6.3**: Generate odds templates for easy weekly input
+- **FR-6.4**: Support standard NFL team abbreviations
+
+### **Non-Functional Requirements**
+
+#### **NFR-1: Reliability**
+- **NFR-1.1**: Handle API failures gracefully
+- **NFR-1.2**: Validate all calculations before processing
+- **NFR-1.3**: Backup data storage mechanisms
+- **NFR-1.4**: Error logging and recovery procedures
+
+#### **NFR-2: Usability**
+- **NFR-2.1**: Simple weekly workflow (< 10 minutes)
+- **NFR-2.2**: Clear error messages and validation feedback
+- **NFR-2.3**: Interactive tools for testing and troubleshooting
+- **NFR-2.4**: Minimal technical knowledge required
+
+#### **NFR-3: Performance**
+- **NFR-3.1**: Process weekly results in < 30 seconds
+- **NFR-3.2**: Support leagues up to 20 members
+- **NFR-3.3**: Handle 18+ weeks of NFL season data
+
+---
+
+## **Technical Architecture**
+
+### **System Components**
+
+#### **Core Classes**
+1. **SleeperSkinsGame**: Main automation engine
+2. **SleeperAPIExplorer**: Data discovery and testing
+3. **SleeperTestingToolkit**: Interactive tools and validation
+
+#### **Data Sources**
+- **Sleeper API**: Real-time league data
+  - `/league/{league_id}` - League info and current week
+  - `/league/{league_id}/users` - User mapping
+  - `/league/{league_id}/rosters` - Scores and picks
+- **Manual Input**: Game odds and results (JSON files)
+- **Local Storage**: Excel files for historical data
+
+#### **External Integrations**
+- **Twilio SMS API**: Notification delivery
+- **Pandas/Excel**: Data storage and analysis
+
+### **Data Models**
+
+#### **Sleeper API Data Structure**
+```json
+{
+  "roster": {
+    "owner_id": "997251019148951552",
+    "roster_id": 3,
+    "metadata": {
+      "points_by_leg": {
+        "v1:regular:1": 11.0,
+        "v1:regular:2": 5.0
+      },
+      "previous_picks": {
+        "v1:regular:18": ["ARI", "ATL", "BAL"]
+      }
+    }
+  }
+}
+```
+
+#### **Odds Input Format**
+```json
+{
+  "ARI": {
+    "opponent": "LAR", 
+    "is_underdog": true, 
+    "won": false
+  },
+  "LAR": {
+    "opponent": "ARI", 
+    "is_underdog": false, 
+    "won": true
+  }
+}
+```
+
+#### **Storage Schema**
+- **Weekly_Results**: week, season, winners, scores, payouts
+- **Skins_Tracking**: week, skin_amounts, carry_over_flags  
+- **User_Stats**: user_id, total_wins, total_winnings
+
+---
+
+## **User Workflows**
+
+### **Weekly Commissioner Workflow**
+1. **Tuesday AM**: Run quick overview to check data availability
+2. **Generate odds template** for the completed week
+3. **Fill in odds manually** (5-10 minutes):
+   - Mark underdogs based on point spreads
+   - Mark winners based on actual game results
+4. **Process the week** - automated calculation and notifications
+5. **Review results** in generated Excel files
+
+### **Season Setup Workflow**
+1. **Initial setup**: Configure league ID and Twilio credentials
+2. **Test connection** with Sleeper API
+3. **Create user mapping** file for reference
+4. **Test with previous week** to validate calculations
+5. **Deploy for current season**
+
+### **Troubleshooting Workflow**
+1. **Validate odds file** format and completeness
+2. **Analyze specific weeks** for data issues
+3. **Test calculations** before processing
+4. **Review historical data** for discrepancies
+
+---
+
+## **Configuration Management**
+
+### **config.json Structure**
+```json
+{
+  "twilio": {
+    "account_sid": "YOUR_TWILIO_ACCOUNT_SID",
+    "auth_token": "YOUR_TWILIO_AUTH_TOKEN", 
+    "from_number": "+1234567890",
+    "to_numbers": ["+1234567890", "+0987654321"]
+  },
+  "league_settings": {
+    "current_season": 2024,
+    "league_name": "A League of Buddies Pool"
+  }
+}
+```
+
+### **Environment Variables**
+- `SLEEPER_LEAGUE_ID`: Target league identifier
+- `CONFIG_FILE`: Path to configuration file
+- `DATA_FILE`: Path to Excel storage file
+
+---
+
+## **Error Handling & Edge Cases**
+
+### **API Failures**
+- **Sleeper API down**: Graceful degradation with cached data
+- **Rate limiting**: Exponential backoff retry logic
+- **Invalid league ID**: Clear error message and validation
+
+### **Data Edge Cases**  
+- **Missing week data**: Skip processing with notification
+- **Malformed picks data**: Individual user exclusion
+- **Tie scenarios**: Proper carry-over logic
+- **Perfect week + tie**: Multiple payout scenarios
+
+### **Input Validation**
+- **Odds file format**: JSON schema validation
+- **Missing game results**: Incomplete week detection
+- **User mapping issues**: Fallback to owner_id
+
+---
+
+## **Security & Privacy**
+
+### **Data Protection**
+- **Local storage only**: No cloud data transmission
+- **API keys**: Secure configuration file storage
+- **User data**: Minimal PII collection (display names only)
+
+### **Access Control**
+- **Commissioner-only access**: Single-user system
+- **File permissions**: Restrict configuration file access
+- **SMS recipients**: Explicit opt-in list management
+
+---
+
+## **Testing Strategy**
+
+### **Unit Testing**
+- **Calculation logic**: High score, underdog, perfect week detection
+- **Skins carry-over**: Multi-week tie scenarios
+- **Data parsing**: Sleeper API response handling
+
+### **Integration Testing**  
+- **End-to-end**: Full week processing workflow
+- **API connectivity**: Sleeper API integration
+- **SMS delivery**: Twilio notification system
+
+### **User Acceptance Testing**
+- **Commissioner workflow**: Weekly process timing and usability
+- **Accuracy validation**: Manual verification of calculations
+- **Notification content**: Message clarity and completeness
+
+---
+
+## **Deployment & Operations**
+
+### **Installation Requirements**
+```bash
+pip install requests pandas openpyxl twilio schedule
+```
+
+### **Configuration Steps**
+1. Clone repository and install dependencies
+2. Update `config.json` with league ID and Twilio credentials
+3. Run connection test with SleeperTestingToolkit
+4. Process a historical week for validation
+5. Deploy for current season
+
+### **Monitoring & Maintenance**
+- **Weekly execution logs**: Success/failure tracking
+- **Data backup**: Regular Excel file snapshots
+- **Season rollover**: Configuration updates for new season
+- **Dependency updates**: Regular package maintenance
+
+---
+
+## **Future Enhancements (V2+)**
+
+### **Automation Improvements**
+- **Scheduled execution**: Automated weekly processing
+- **Odds API integration**: Eliminate manual input requirement
+- **Web interface**: GUI for non-technical users
+- **Mobile app**: Push notifications and status checking
+
+### **Feature Extensions**
+- **Multiple skins games**: Different contest types
+- **Historical analytics**: Trend analysis and statistics
+- **Integration options**: Venmo/PayPal for automated payouts
+- **League website**: Public results display
+
+### **Scalability**
+- **Multi-league support**: Manage multiple leagues
+- **Cloud deployment**: AWS/Google Cloud hosting
+- **Database storage**: PostgreSQL/MySQL backend
+- **Real-time updates**: WebSocket notifications
+
+---
+
+## **Success Metrics**
+
+### **Primary KPIs**
+- **Processing time**: < 10 minutes per week (including manual input)
+- **Accuracy rate**: 100% calculation accuracy vs manual verification
+- **Notification delivery**: 100% SMS success rate
+- **User satisfaction**: Positive feedback from league members
+
+### **Secondary Metrics**
+- **Error rate**: < 1% failed executions per season
+- **Data completeness**: 100% week coverage
+- **Commissioner time saved**: 80% reduction vs manual process
+
+---
+
+## **Risk Assessment**
+
+### **High Risk**
+- **Sleeper API changes**: Breaking changes to data structure
+- **Calculation errors**: Money-related mistakes affecting league trust
+- **SMS failures**: Missing notifications for important results
+
+### **Medium Risk**  
+- **Manual input errors**: Incorrect odds data entry
+- **Data corruption**: Excel file integrity issues
+- **Dependency conflicts**: Python package compatibility
+
+### **Mitigation Strategies**
+- **API monitoring**: Regular data structure validation
+- **Dual verification**: Manual spot-checking of calculations  
+- **Backup notifications**: Multiple delivery channels
+- **Data validation**: Comprehensive input checking
+- **Version control**: Git tracking of all changes
+
+---
+
+## **Appendix**
+
+### **Glossary**
+- **Skins Game**: Carry-over betting format where ties roll stakes to next period
+- **Underdog Pick**: Selection of team expected to lose based on point spread
+- **Perfect Week**: 100% correct picks across all games in a week
+- **Carry-over**: Rolling unclaimed stakes to subsequent weeks
+
+### **References**
+- [Sleeper API Documentation](https://docs.sleeper.app/)
+- [Twilio SMS API](https://www.twilio.com/docs/sms)
+- [Python Pandas Documentation](https://pandas.pydata.org/docs/)
+
+---
+
+*This PRD serves as the definitive guide for the Sleeper Skins Game Automation project, capturing all requirements, technical specifications, and operational procedures.*
