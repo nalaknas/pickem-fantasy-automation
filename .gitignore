@@ -150,3 +150,11 @@ Thumbs.db
 # backups/
 # *.xlsx
 # *.csv
+
+# Environment variables and sensitive configuration
+.env
+.env.local
+.env.production
+.env.staging
+config.json
+secrets.json

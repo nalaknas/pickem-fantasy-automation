@@ -4,13 +4,14 @@ Complete example showing how to process a week with underdog calculations
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def process_week_example():
     """Example of processing a week with complete odds data"""
     
     # Initialize with correct league ID
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     print("🏈 COMPLETE WEEK PROCESSING EXAMPLE 🏈")

@@ -4,12 +4,13 @@ Debug the users data structure
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 
 def debug_users():
     print("🔍 DEBUGGING USERS DATA STRUCTURE")
     print("=" * 40)
     
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     try:

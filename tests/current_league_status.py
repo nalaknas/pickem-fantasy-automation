@@ -4,11 +4,12 @@ Current League Status and Example Output
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def show_current_league_status():
     # Initialize with correct league ID
-    league_id = "1267183695911976960"  # Current season league ID
+    league_id = config.sleeper_league_id  # Current season league ID
     skins_game = SleeperSkinsGameMVP(league_id)
     
     print("🏈 CURRENT LEAGUE STATUS 🏈")

@@ -9,13 +9,12 @@ This script demonstrates how to:
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def main():
-    # Initialize with your league ID
-    # league_id = "1137502853016403968"  # Old league ID (commented out)
-    league_id = "1267183695911976960"  # Current season league ID
-    skins_game = SleeperSkinsGameMVP(league_id)
+    # Initialize with secure configuration
+    skins_game = SleeperSkinsGameMVP()
     
     print("🏈 SLEEPER SKINS GAME MVP 🏈")
     print("=" * 40)

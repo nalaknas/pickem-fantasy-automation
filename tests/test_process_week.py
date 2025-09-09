@@ -4,6 +4,7 @@ Test process_week method step by step
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def test_process_week():
@@ -11,7 +12,7 @@ def test_process_week():
     print("=" * 40)
     
     # Use 2025 league ID
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     try:

@@ -15,6 +15,7 @@ Usage:
 
 from .skins_game_mvp import SleeperSkinsGameMVP
 from .export_results import SkinsGameExporter
+from .secure_config import config
 import json
 import os
 from datetime import datetime
@@ -23,9 +24,8 @@ def main():
     print("🏈 WEEKLY SKINS GAME RUNNER 🏈")
     print("=" * 50)
     
-    # Initialize with your league ID (2025 season)
-    league_id = "1267183695911976960"
-    skins_game = SleeperSkinsGameMVP(league_id)
+    # Initialize with secure configuration
+    skins_game = SleeperSkinsGameMVP()
     
     try:
         # Check if week is specified as command line argument
@@ -140,8 +140,7 @@ def quick_status():
     print("🔍 QUICK STATUS CHECK")
     print("=" * 30)
     
-    league_id = "1267183695911976960"
-    skins_game = SleeperSkinsGameMVP(league_id)
+    skins_game = SleeperSkinsGameMVP()
     
     try:
         current_week = skins_game.get_current_week()

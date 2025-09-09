@@ -267,9 +267,9 @@ class SleeperAPIExplorer:
 
 # Usage
 if __name__ == "__main__":
-    # Replace with your actual Sleeper league ID
-    # league_id = "1267183695911976960" # 2025
-    league_id = "1267183695911976960" # 2025
+    # Get league ID from secure configuration
+    from .secure_config import config
+    league_id = config.sleeper_league_id
     
     explorer = SleeperAPIExplorer(league_id)
     

@@ -4,12 +4,13 @@ Debug script to see what picks users made and why perfect week detection isn't w
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def debug_perfect_week():
     """Debug perfect week detection"""
     
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     week = 1

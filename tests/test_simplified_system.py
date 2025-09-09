@@ -4,13 +4,14 @@ Test script for the simplified skins game system
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def test_simplified_system():
     """Test the simplified ranking system"""
     
     # Initialize with your league ID
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     try:

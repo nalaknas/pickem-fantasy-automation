@@ -4,10 +4,11 @@ Debug script to check the Sleeper API data for the new league ID
 """
 
 import requests
+from secure_config import config
 import json
 
 def debug_league_data():
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     base_url = "https://api.sleeper.app/v1"
     
     print(f"🔍 Debugging League ID: {league_id}")

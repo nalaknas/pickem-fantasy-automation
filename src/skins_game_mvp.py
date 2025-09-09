@@ -3,18 +3,19 @@ import json
 import pandas as pd
 from datetime import datetime
 from typing import Dict, List, Tuple, Optional
+from .secure_config import config
 
 class SleeperSkinsGameMVP:
-    def __init__(self, league_id: str):
+    def __init__(self, league_id: str = None):
         """
         Minimal MVP for Sleeper Skins Game automation
         
         Args:
-            league_id: Your Sleeper league ID
+            league_id: Your Sleeper league ID (optional, will use config if not provided)
         """
-        self.league_id = league_id
+        self.league_id = league_id or config.sleeper_league_id
         self.base_url = "https://api.sleeper.app/v1"
-        self.results_file = "data/skins_game_results.json"
+        self.results_file = f"{config.data_directory}/{config.results_file}"
         
         # Cache for API data
         self._users_cache = None
@@ -365,10 +366,8 @@ class SleeperSkinsGameMVP:
 def main():
     """Example usage of the MVP"""
     
-    # Initialize with your league ID
-    # league_id = "1137502853016403968"  # Old league ID (commented out)
-    league_id = "1267183695911976960"  # Current season league ID
-    skins_game = SleeperSkinsGameMVP(league_id)
+    # Initialize with secure configuration
+    skins_game = SleeperSkinsGameMVP()
     
     try:
         # Get current week

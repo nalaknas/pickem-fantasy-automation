@@ -4,13 +4,14 @@ Minimal test to isolate the exact error
 """
 
 from skins_game_mvp import SleeperSkinsGameMVP
+from secure_config import config
 import json
 
 def minimal_test():
     print("🔍 MINIMAL TEST")
     print("=" * 20)
     
-    league_id = "1267183695911976960"
+    league_id = config.sleeper_league_id
     skins_game = SleeperSkinsGameMVP(league_id)
     
     try:

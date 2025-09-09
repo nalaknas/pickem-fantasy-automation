@@ -63,9 +63,11 @@ python main.py export
 ```python
 from src.skins_game_mvp import SleeperSkinsGameMVP
 
-# Initialize with your league ID
-league_id = "1267183695911976960"
-skins_game = SleeperSkinsGameMVP(league_id)
+# Initialize with secure configuration (uses .env file)
+skins_game = SleeperSkinsGameMVP()
+
+# Or initialize with specific league ID
+skins_game = SleeperSkinsGameMVP("your_league_id_here")
 
 # Process a week
 result = skins_game.process_week(1)
@@ -86,10 +88,24 @@ skins_game.view_all_results()
 
 ## Configuration
 
-The system uses a hardcoded league ID (`1267183695911976960`) for the 2025 season. To use with a different league:
+### Secure Setup (Recommended)
 
-1. Update the `league_id` in `src/weekly_runner.py` (line 26)
-2. Update the `league_id` in `src/skins_game_mvp.py` (line 367)
+The system now uses secure environment variables to protect your sensitive data:
+
+1. **Run the setup script**: `python setup.py`
+2. **Enter your league ID** when prompted
+3. **Optionally configure Twilio** for notifications
+4. **Your data is automatically secured** in a `.env` file
+
+### Manual Configuration
+
+If you prefer manual setup:
+
+1. Copy `env.template` to `.env`
+2. Fill in your `SLEEPER_LEAGUE_ID`
+3. Optionally add Twilio credentials for notifications
+
+**Important**: The `.env` file is automatically excluded from version control to keep your data secure.
 
 ## Data Files
 
