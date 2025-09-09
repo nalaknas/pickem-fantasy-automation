@@ -2,6 +2,14 @@
 
 A Python package for automating fantasy football skins game calculations using the Sleeper API.
 
+## 👨‍💻 Author & Support
+
+**Owner**: Sankalan Sarbadhikari  
+**Email**: sankalans@gmail.com  
+**GitHub**: [@nalaknas](https://github.com/nalaknas)
+
+For issues, questions, or contributions, please contact the owner or open an issue on GitHub.
+
 ## Project Structure
 
 ```
