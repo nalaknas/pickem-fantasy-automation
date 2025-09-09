@@ -15,6 +15,7 @@ Usage:
 
 from .skins_game_mvp import SleeperSkinsGameMVP
 from .export_results import SkinsGameExporter
+from .sms_notifications import SMSNotifier
 
 # Handle both relative and absolute imports
 try:
@@ -120,6 +121,26 @@ def main():
         else:
             print(f"⚠️  Export failed, but results are still saved")
         
+        # Send SMS notifications if configured
+        print(f"\n📱 SMS NOTIFICATIONS")
+        print("=" * 30)
+        sms_notifier = SMSNotifier()
+        
+        if sms_notifier.is_configured():
+            print(f"✅ SMS notifications configured")
+            print(f"📞 Configured numbers: {sms_notifier.get_configured_numbers()}")
+            
+            # Check if user wants to send notifications
+            send_sms = input("\n🤔 Send SMS notifications to group chat? (y/N): ").strip().lower()
+            if send_sms in ['y', 'yes']:
+                season = result.get('season', config.current_season)
+                sms_notifier.send_results_notification(result, target_week, season)
+            else:
+                print("📱 SMS notifications skipped")
+        else:
+            print("⚠️  SMS notifications not configured")
+            print("   To enable SMS notifications, configure Twilio settings in your .env file")
+        
         # Optional: Show all results if requested
         import sys
         if len(sys.argv) > 2 and sys.argv[2] == "--show-all":
@@ -139,7 +160,10 @@ def main():
         print(f"  python3 main.py 1                          # Process Week 1")
         print(f"  python3 main.py 1 --show-all               # Process Week 1 and show all results")
         print(f"  python3 main.py status                     # Quick status check")
+        print(f"  python3 main.py test-sms                    # Test SMS notifications")
+        print(f"  python3 main.py test-sms +1234567890       # Test SMS to specific number")
         print(f"\n📝 Optional: Create week_X_game_results.json for perfect week detection")
+        print(f"📱 SMS: Configure Twilio settings in .env file for automatic notifications")
 
 def quick_status():
     """Quick status check without processing"""
