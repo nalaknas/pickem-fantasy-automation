@@ -46,6 +46,36 @@ class AppleShortcutsIntegration:
             print(f"Error loading results: {e}")
             return None
     
+    def create_sample_results(self, week: int = 1) -> Dict:
+        """Create sample results for testing Apple Shortcuts"""
+        return {
+            'week': week,
+            'season': 2025,
+            'date_processed': datetime.now().isoformat(),
+            'rankings': {
+                'highest': ['user1'],
+                'second_highest': ['user2'],
+                'third_highest': ['user3'],
+                'lowest': ['user4'],
+                'no_picks': []
+            },
+            'scores': {
+                'highest': 12.0,
+                'second_highest': 10.0,
+                'third_highest': 8.0,
+                'lowest': 2.0
+            },
+            'perfect_week_winners': [],
+            'winner_names': {
+                'highest': ['John'],
+                'second_highest': ['Sarah'],
+                'third_highest': ['Mike'],
+                'lowest': ['Tom'],
+                'no_picks': [],
+                'perfect_week': []
+            }
+        }
+    
     def format_for_shortcuts(self, result: Dict) -> Dict:
         """
         Format results for Apple Shortcuts consumption
@@ -105,9 +135,12 @@ class AppleShortcutsIntegration:
             'timestamp': datetime.now().isoformat()
         }
     
-    def create_shortcuts_data(self) -> Dict:
+    def create_shortcuts_data(self, use_sample: bool = False) -> Dict:
         """Create data file for Apple Shortcuts to consume"""
-        latest_result = self.get_latest_results()
+        if use_sample:
+            latest_result = self.create_sample_results()
+        else:
+            latest_result = self.get_latest_results()
         
         if not latest_result:
             return {
@@ -118,10 +151,10 @@ class AppleShortcutsIntegration:
         
         return self.format_for_shortcuts(latest_result)
     
-    def save_shortcuts_data(self, output_file: str = "shortcuts_data.json") -> bool:
+    def save_shortcuts_data(self, output_file: str = "shortcuts_data.json", use_sample: bool = False) -> bool:
         """Save formatted data for Apple Shortcuts"""
         try:
-            data = self.create_shortcuts_data()
+            data = self.create_shortcuts_data(use_sample)
             
             with open(output_file, 'w') as f:
                 json.dump(data, f, indent=2)
@@ -141,11 +174,23 @@ def main():
     
     integration = AppleShortcutsIntegration()
     
-    # Create the data file
-    if integration.save_shortcuts_data():
-        print("\n📝 Generated data for Apple Shortcuts:")
+    # Test with sample data first
+    print("\n🧪 Testing with sample data...")
+    if integration.save_shortcuts_data("shortcuts_sample.json", use_sample=True):
+        print("\n📝 Sample data for Apple Shortcuts:")
         
-        data = integration.create_shortcuts_data()
+        data = integration.create_shortcuts_data(use_sample=True)
+        print(f"Week: {data['week']}")
+        print(f"Season: {data['season']}")
+        print(f"\nMessage preview:")
+        print("-" * 40)
+        print(data['message_text'])
+        print("-" * 40)
+    
+    # Test with real data
+    print("\n📊 Testing with real data...")
+    if integration.save_shortcuts_data("shortcuts_real.json", use_sample=False):
+        data = integration.create_shortcuts_data(use_sample=False)
         if 'error' not in data:
             print(f"Week: {data['week']}")
             print(f"Season: {data['season']}")
@@ -157,10 +202,11 @@ def main():
             print(f"Error: {data['error']}")
     
     print(f"\n📱 Next steps for iPhone setup:")
-    print(f"1. Transfer shortcuts_data.json to your iPhone")
+    print(f"1. Transfer shortcuts_sample.json to your iPhone")
     print(f"2. Create an Apple Shortcut that reads this file")
     print(f"3. Use 'Send Message' action to send to your group chat")
     print(f"4. Run the shortcut whenever you want to send results")
+    print(f"\n💡 Use shortcuts_sample.json for testing, shortcuts_real.json for actual results")
 
 
 if __name__ == "__main__":

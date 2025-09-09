@@ -121,25 +121,44 @@ def main():
         else:
             print(f"⚠️  Export failed, but results are still saved")
         
-        # Send SMS notifications if configured
-        print(f"\n📱 SMS NOTIFICATIONS")
+        # Send notifications if configured
+        print(f"\n📱 NOTIFICATIONS")
         print("=" * 30)
-        sms_notifier = SMSNotifier()
         
-        if sms_notifier.is_configured():
+        # Check what notification methods are available
+        sms_notifier = SMSNotifier()
+        has_sms = sms_notifier.is_configured()
+        
+        if has_sms:
             print(f"✅ SMS notifications configured")
             print(f"📞 Configured numbers: {sms_notifier.get_configured_numbers()}")
-            
-            # Check if user wants to send notifications
-            send_sms = input("\n🤔 Send SMS notifications to group chat? (y/N): ").strip().lower()
-            if send_sms in ['y', 'yes']:
-                season = result.get('season', config.current_season)
-                sms_notifier.send_results_notification(result, target_week, season)
-            else:
-                print("📱 SMS notifications skipped")
         else:
-            print("⚠️  SMS notifications not configured")
-            print("   To enable SMS notifications, configure Twilio settings in your .env file")
+            print(f"⚠️  SMS notifications not configured")
+        
+        print(f"📱 Apple Shortcuts integration available")
+        
+        # Ask user what they want to do
+        print(f"\n🤔 How would you like to send results?")
+        print(f"1. SMS notifications (via Twilio)")
+        print(f"2. Apple Shortcuts (iPhone iMessage)")
+        print(f"3. Skip notifications")
+        
+        choice = input("Enter choice (1/2/3): ").strip()
+        
+        if choice == "1" and has_sms:
+            season = result.get('season', config.current_season)
+            sms_notifier.send_results_notification(result, target_week, season)
+        elif choice == "2":
+            print(f"\n📱 Generating Apple Shortcuts data...")
+            from .apple_shortcuts import AppleShortcutsIntegration
+            shortcuts = AppleShortcutsIntegration()
+            shortcuts.save_shortcuts_data("shortcuts_data.json", use_sample=False)
+            print(f"✅ Data saved to shortcuts_data.json")
+            print(f"📱 Transfer this file to your iPhone and run your shortcut!")
+        elif choice == "1" and not has_sms:
+            print(f"❌ SMS not configured. Use option 2 for Apple Shortcuts instead.")
+        else:
+            print(f"📱 Notifications skipped")
         
         # Optional: Show all results if requested
         import sys
