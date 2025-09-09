@@ -92,7 +92,7 @@ skins_game.view_all_results()
 
 The system now uses secure environment variables to protect your sensitive data:
 
-1. **Run the setup script**: `python setup.py`
+1. **Run the setup script**: `python scripts/setup.py`
 2. **Enter your league ID** when prompted
 3. **Optionally configure Twilio** for notifications
 4. **Your data is automatically secured** in a `.env` file
@@ -101,11 +101,33 @@ The system now uses secure environment variables to protect your sensitive data:
 
 If you prefer manual setup:
 
-1. Copy `env.template` to `.env`
+1. Copy `config/env.template` to `.env`
 2. Fill in your `SLEEPER_LEAGUE_ID`
 3. Optionally add Twilio credentials for notifications
 
 **Important**: The `.env` file is automatically excluded from version control to keep your data secure.
+
+## Project Structure
+
+```
+pickem_fantasy_automation/
+├── src/                    # Core application code
+│   ├── skins_game_mvp.py   # Main MVP implementation
+│   ├── weekly_runner.py    # Weekly processing script
+│   ├── secure_config.py    # Secure configuration management
+│   └── ...
+├── tests/                  # Test files and examples
+├── data/                   # League data and results
+├── exports/                # Generated reports (CSV/Excel)
+├── config/                 # Configuration templates
+├── scripts/                # Setup and utility scripts
+├── docs/                   # Documentation
+├── backups/                # Data backups
+├── main.py                 # Main entry point
+├── requirements.txt        # Python dependencies
+├── SECURITY.md            # Security documentation
+└── README.md              # This file
+```
 
 ## Data Files
 
@@ -117,10 +139,10 @@ If you prefer manual setup:
 
 ## Export Files
 
-The system automatically generates comprehensive reports in the root directory:
+The system automatically generates comprehensive reports in the `exports/` directory:
 
-- `skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
-- `skins_game_season_report.xlsx`: Excel format with multiple sheets:
+- `exports/skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
+- `exports/skins_game_season_report.xlsx`: Excel format with multiple sheets:
   - **Weekly_Breakdown**: Week-by-week winners, scores, and perfect weeks
   - **Season_Scores**: Complete season scores for all users with rankings
   - **User_Picks**: Individual user picks (when available)

@@ -14,7 +14,7 @@ from pathlib import Path
 def create_env_file():
     """Create a secure .env file from the template."""
     env_file = Path(".env")
-    template_file = Path("env.template")
+    template_file = Path("config/env.template")
     
     if env_file.exists():
         print("⚠️  .env file already exists!")
@@ -24,7 +24,7 @@ def create_env_file():
             return True
     
     if not template_file.exists():
-        print("❌ env.template file not found!")
+        print("❌ config/env.template file not found!")
         return False
     
     print("🔒 Setting up secure configuration...")

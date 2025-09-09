@@ -32,7 +32,7 @@ The following sensitive information is now secured:
 ## 📋 Setup Checklist
 
 ### ✅ Initial Setup
-1. Run `python setup.py` to create secure configuration
+1. Run `python scripts/setup.py` to create secure configuration
 2. Enter your Sleeper League ID when prompted
 3. Optionally configure Twilio for notifications
 4. Verify setup with `python main.py status`
@@ -82,7 +82,7 @@ python -c "from src.skins_game_mvp import SleeperSkinsGameMVP; s = SleeperSkinsG
 - Store sensitive data in configuration files that get committed
 
 ### ❌ Common Mistakes
-- Forgetting to run `python setup.py` before first use
+- Forgetting to run `python scripts/setup.py` before first use
 - Copying `.env` files between different projects
 - Sharing screenshots that show sensitive data
 - Using production credentials in development
@@ -92,7 +92,7 @@ python -c "from src.skins_game_mvp import SleeperSkinsGameMVP; s = SleeperSkinsG
 ### "Missing required environment variables" Error
 ```bash
 # Solution: Run the setup script
-python setup.py
+python scripts/setup.py
 ```
 
 ### "Configuration validation failed" Error
@@ -101,7 +101,7 @@ python setup.py
 cat .env
 
 # Recreate .env file
-python setup.py
+python scripts/setup.py
 ```
 
 ### Import Errors
@@ -127,7 +127,7 @@ If you encounter security issues:
 If you're upgrading from a version with hardcoded league IDs:
 
 1. **Backup your data** (just in case)
-2. **Run the setup script**: `python setup.py`
+2. **Run the setup script**: `python scripts/setup.py`
 3. **Enter your league ID** when prompted
 4. **Test functionality**: `python main.py status`
 5. **Remove old hardcoded values** (already done in this version)
