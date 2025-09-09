@@ -3,7 +3,12 @@ import json
 import pandas as pd
 from datetime import datetime
 from typing import Dict, List, Tuple, Optional
-from .secure_config import config
+
+# Handle both relative and absolute imports
+try:
+    from .secure_config import config
+except ImportError:
+    from secure_config import config
 
 class SleeperSkinsGameMVP:
     def __init__(self, league_id: str = None):

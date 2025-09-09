@@ -15,7 +15,13 @@ Usage:
 
 from .skins_game_mvp import SleeperSkinsGameMVP
 from .export_results import SkinsGameExporter
-from .secure_config import config
+
+# Handle both relative and absolute imports
+try:
+    from .secure_config import config
+except ImportError:
+    from secure_config import config
+
 import json
 import os
 from datetime import datetime
