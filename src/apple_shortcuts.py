@@ -165,6 +165,22 @@ class AppleShortcutsIntegration:
         except Exception as e:
             print(f"❌ Failed to save Shortcuts data: {e}")
             return False
+    
+    def save_shortcuts_data_for_week(self, output_file: str, week: int, result: Dict) -> bool:
+        """Save formatted data for a specific week's results"""
+        try:
+            # Format the specific result data
+            data = self.format_for_shortcuts(result)
+            
+            with open(output_file, 'w') as f:
+                json.dump(data, f, indent=2)
+            
+            print(f"✅ Week {week} shortcuts data saved to {output_file}")
+            return True
+            
+        except Exception as e:
+            print(f"❌ Failed to save Week {week} Shortcuts data: {e}")
+            return False
 
 
 def main():

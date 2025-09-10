@@ -149,10 +149,10 @@ def main():
             season = result.get('season', config.current_season)
             sms_notifier.send_results_notification(result, target_week, season)
         elif choice == "2":
-            print(f"\n📱 Generating Apple Shortcuts data...")
+            print(f"\n📱 Generating Apple Shortcuts data for Week {target_week}...")
             from .apple_shortcuts import AppleShortcutsIntegration
             shortcuts = AppleShortcutsIntegration()
-            shortcuts.save_shortcuts_data("shortcuts_data.json", use_sample=False)
+            shortcuts.save_shortcuts_data_for_week("shortcuts_data.json", target_week, result)
             print(f"✅ Data saved to shortcuts_data.json")
             print(f"📱 Transfer this file to your iPhone and run your shortcut!")
         elif choice == "1" and not has_sms:
