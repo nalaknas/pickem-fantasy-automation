@@ -71,7 +71,7 @@ class AppleShortcutsIntegration:
                 'second_highest': ['Sarah'],
                 'third_highest': ['Mike'],
                 'lowest': ['Tom'],
-                'no_picks': [],
+                'no_picks': ['Alex'],
                 'perfect_week': []
             }
         }
@@ -95,6 +95,7 @@ class AppleShortcutsIntegration:
             'second_highest': ', '.join(result['winner_names']['second_highest']) if result['winner_names']['second_highest'] else 'None',
             'third_highest': ', '.join(result['winner_names']['third_highest']) if result['winner_names']['third_highest'] else 'None',
             'lowest': ', '.join(result['winner_names']['lowest']) if result['winner_names']['lowest'] else 'None',
+            'no_picks': ', '.join(result['winner_names']['no_picks']) if result['winner_names']['no_picks'] else 'None',
             'perfect_week': ', '.join(result['winner_names']['perfect_week']) if result['winner_names']['perfect_week'] else 'None'
         }
         
@@ -123,6 +124,10 @@ class AppleShortcutsIntegration:
         
         if winners['perfect_week'] != 'None':
             message_text += f"🎯 Perfect Week: {winners['perfect_week']} 🎉\n"
+        
+        # Add No Picks section as a separate, clear category
+        if winners['no_picks'] != 'None':
+            message_text += f"\n❌ NO PICKS SUBMITTED: {winners['no_picks']}\n"
         
         message_text += f"\nSeason {season} • Week {week}\nGood luck next week! 🍀"
         
