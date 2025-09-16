@@ -21,8 +21,17 @@ def main():
     print("=" * 50)
     
     # Load Week 1 results
-    with open('data/skins_game_results.json', 'r') as f:
-        results = json.load(f)
+    try:
+        with open('data/skins_game_results.json', 'r') as f:
+            results = json.load(f)
+    except FileNotFoundError:
+        print("❌ No results file found at data/skins_game_results.json")
+        print("   Run 'python3 main.py' first to process a week")
+        return
+    except json.JSONDecodeError as e:
+        print(f"❌ Error reading results file: {e}")
+        print("   The file may be corrupted or invalid JSON")
+        return
     
     # Find Week 1 results
     week1_results = None

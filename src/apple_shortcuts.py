@@ -91,20 +91,21 @@ class AppleShortcutsIntegration:
         
         # Format winners
         winners = {
-            'highest': ', '.join(result['winner_names']['highest']) if result['winner_names']['highest'] else 'None',
-            'second_highest': ', '.join(result['winner_names']['second_highest']) if result['winner_names']['second_highest'] else 'None',
-            'third_highest': ', '.join(result['winner_names']['third_highest']) if result['winner_names']['third_highest'] else 'None',
-            'lowest': ', '.join(result['winner_names']['lowest']) if result['winner_names']['lowest'] else 'None',
-            'no_picks': ', '.join(result['winner_names']['no_picks']) if result['winner_names']['no_picks'] else 'None',
-            'perfect_week': ', '.join(result['winner_names']['perfect_week']) if result['winner_names']['perfect_week'] else 'None'
+            'highest': ', '.join(result['winner_names']['high_score']) if result['winner_names'].get('high_score') else 'None',
+            'second_highest': ', '.join(result['winner_names']['second_highest']) if result['winner_names'].get('second_highest') else 'None',
+            'third_highest': ', '.join(result['winner_names']['third_highest']) if result['winner_names'].get('third_highest') else 'None',
+            'lowest': ', '.join(result['winner_names']['lowest']) if result['winner_names'].get('lowest') else 'None',
+            'no_picks': ', '.join(result['winner_names']['no_picks']) if result['winner_names'].get('no_picks') else 'None',
+            'perfect_week': ', '.join(result['winner_names']['perfect_week']) if result['winner_names'].get('perfect_week') else 'None'
         }
         
         # Format scores
         scores = {
-            'highest': result['scores']['highest'],
-            'second_highest': result['scores']['second_highest'],
-            'third_highest': result['scores']['third_highest'],
-            'lowest': result['scores']['lowest']
+            'highest': result.get('scores', {}).get('highest', 0),
+            'second_highest': result.get('scores', {}).get('second_highest', 0),
+            'third_highest': result.get('scores', {}).get('third_highest', 0),
+            'lowest': result.get('scores', {}).get('lowest', 0),
+            'no_picks': result.get('scores', {}).get('no_picks', 0)
         }
         
         # Create iMessage-ready text
