@@ -15,6 +15,7 @@ Usage:
 
 from .skins_game_mvp import SleeperSkinsGameMVP
 from .export_results import SkinsGameExporter
+from .sms_notifications import SMSNotifier
 
 # Handle both relative and absolute imports
 try:
@@ -120,6 +121,45 @@ def main():
         else:
             print(f"⚠️  Export failed, but results are still saved")
         
+        # Send notifications if configured
+        print(f"\n📱 NOTIFICATIONS")
+        print("=" * 30)
+        
+        # Check what notification methods are available
+        sms_notifier = SMSNotifier()
+        has_sms = sms_notifier.is_configured()
+        
+        if has_sms:
+            print(f"✅ SMS notifications configured")
+            print(f"📞 Configured numbers: {sms_notifier.get_configured_numbers()}")
+        else:
+            print(f"⚠️  SMS notifications not configured")
+        
+        print(f"📱 Apple Shortcuts integration available")
+        
+        # Ask user what they want to do
+        print(f"\n🤔 How would you like to send results?")
+        print(f"1. SMS notifications (via Twilio)")
+        print(f"2. Apple Shortcuts (iPhone iMessage)")
+        print(f"3. Skip notifications")
+        
+        choice = input("Enter choice (1/2/3): ").strip()
+        
+        if choice == "1" and has_sms:
+            season = result.get('season', config.current_season)
+            sms_notifier.send_results_notification(result, target_week, season)
+        elif choice == "2":
+            print(f"\n📱 Generating Apple Shortcuts data for Week {target_week}...")
+            from .apple_shortcuts import AppleShortcutsIntegration
+            shortcuts = AppleShortcutsIntegration()
+            shortcuts.save_shortcuts_data_for_week("shortcuts_data.json", target_week, result)
+            print(f"✅ Data saved to shortcuts_data.json")
+            print(f"📱 Transfer this file to your iPhone and run your shortcut!")
+        elif choice == "1" and not has_sms:
+            print(f"❌ SMS not configured. Use option 2 for Apple Shortcuts instead.")
+        else:
+            print(f"📱 Notifications skipped")
+        
         # Optional: Show all results if requested
         import sys
         if len(sys.argv) > 2 and sys.argv[2] == "--show-all":
@@ -139,7 +179,10 @@ def main():
         print(f"  python3 main.py 1                          # Process Week 1")
         print(f"  python3 main.py 1 --show-all               # Process Week 1 and show all results")
         print(f"  python3 main.py status                     # Quick status check")
+        print(f"  python3 main.py test-sms                    # Test SMS notifications")
+        print(f"  python3 main.py test-sms +1234567890       # Test SMS to specific number")
         print(f"\n📝 Optional: Create week_X_game_results.json for perfect week detection")
+        print(f"📱 SMS: Configure Twilio settings in .env file for automatic notifications")
 
 def quick_status():
     """Quick status check without processing"""
