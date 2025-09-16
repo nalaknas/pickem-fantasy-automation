@@ -24,7 +24,7 @@ def main():
     """Main function for Apple Shortcuts weekly integration"""
     parser = argparse.ArgumentParser(description='Generate Apple Shortcuts data for weekly results')
     parser.add_argument('--sample', action='store_true', help='Generate sample data for testing')
-    parser.add_argument('--output', default='shortcuts_data.json', help='Output filename')
+    parser.add_argument('--output', default='shortcuts/shortcuts_data.json', help='Output filename')
     
     args = parser.parse_args()
     

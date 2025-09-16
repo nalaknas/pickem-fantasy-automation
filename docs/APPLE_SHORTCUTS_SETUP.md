@@ -11,18 +11,18 @@ python3 src/apple_shortcuts.py
 ```
 
 This creates two files:
-- `shortcuts_sample.json` - Sample data for testing
-- `shortcuts_real.json` - Real results from your league
+- `shortcuts/shortcuts_sample.json` - Sample data for testing
+- `shortcuts/shortcuts_real.json` - Real results from your league
 
 ### **Step 2: Transfer Data to iPhone**
 
 **Option A: AirDrop (Recommended)**
 1. Open AirDrop on your Mac
-2. Drag `shortcuts_sample.json` to your iPhone
+2. Drag `shortcuts/shortcuts_sample.json` to your iPhone
 3. Accept the file on your iPhone
 
 **Option B: Email**
-1. Email `shortcuts_sample.json` to yourself
+1. Email `shortcuts/shortcuts_sample.json` to yourself
 2. Open email on iPhone and save attachment
 
 **Option C: iCloud Drive**
@@ -40,7 +40,7 @@ This creates two files:
 **Action 1: Get Contents of File**
 1. Search for "Get Contents of File"
 2. Add this action
-3. Tap "Choose File" and select `shortcuts_sample.json`
+3. Tap "Choose File" and select `shortcuts/shortcuts_sample.json`
 
 **Action 2: Get Value from Input**
 1. Search for "Get Value from Input"
@@ -73,7 +73,7 @@ This creates two files:
 Once testing works with sample data:
 
 1. **Generate real data**: `python3 src/apple_shortcuts.py`
-2. **Transfer `shortcuts_real.json`** to your iPhone
+2. **Transfer `shortcuts/shortcuts_real.json`** to your iPhone
 3. **Update shortcut** to use real data file
 4. **Test with real results**
 

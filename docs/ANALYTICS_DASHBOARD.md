@@ -45,19 +45,19 @@ The analytics dashboard can be used via the command line interface:
 
 ```bash
 # Generate full dashboard with all charts and summary
-python analytics_cli.py --full-dashboard
+python scripts/analytics_cli.py --full-dashboard
 
 # Generate only the performance summary
-python analytics_cli.py --summary-only
+python scripts/analytics_cli.py --summary-only
 
 # Generate only charts
-python analytics_cli.py --charts-only
+python scripts/analytics_cli.py --charts-only
 
 # Predict performance for a specific player
-python analytics_cli.py --predict-player "player_name"
+python scripts/analytics_cli.py --predict-player "player_name"
 
 # Specify custom output directory
-python analytics_cli.py --full-dashboard --output-dir ./my_analytics
+python scripts/analytics_cli.py --full-dashboard --output-dir ./my_analytics
 ```
 
 ### Programmatic Usage

@@ -14,32 +14,74 @@ For issues, questions, or contributions, please contact the owner or open an iss
 
 ```
 pickem_fantasy_automation/
-├── src/                           # Core application code
-│   ├── __init__.py               # Package initialization
-│   ├── skins_game_mvp.py         # Main MVP implementation
-│   ├── weekly_runner.py          # Weekly processing script
-│   ├── view_results.py           # Results viewing utilities
-│   ├── sleeper_skins_game_full.py # Full-featured implementation
-│   ├── sleeper_testing_toolkit.py # Testing utilities
-│   └── sleeper_api_explorer.py   # API exploration tools
-├── tests/                        # Test files and debugging scripts
-│   ├── test_*.py                 # Unit tests
-│   ├── debug_*.py               # Debugging scripts
-│   └── example_*.py              # Example usage scripts
-├── data/                         # Data files
-│   ├── skins_game_results.json   # Main results storage
-│   ├── league_info.json          # League configuration
-│   ├── users.json               # User data
-│   ├── rosters.json             # Roster data
-│   ├── week_*_*.json            # Weekly data files
-│   └── *.xlsx                   # Excel data files
-├── docs/                         # Documentation
-│   ├── README_MVP.md             # MVP documentation
-│   └── README_Weekly_Runner.md   # Weekly runner guide
-├── backups/                      # Backup files
+├── scripts/                          # Main executable scripts
+│   ├── main.py                      # Main entry point
+│   ├── analytics_cli.py             # Analytics dashboard CLI
+│   ├── apple_shortcuts_weekly.py    # Apple Shortcuts integration
+│   ├── generate_week1_data.py       # Week 1 data generator
+│   └── setup.py                     # Setup script
+├── src/                             # Core application code
+│   ├── __init__.py                  # Package initialization
+│   ├── skins_game_mvp.py           # Main MVP implementation
+│   ├── weekly_runner.py            # Weekly processing script
+│   ├── view_results.py             # Results viewing utilities
+│   ├── sleeper_skins_game_full.py  # Full-featured implementation
+│   ├── sleeper_testing_toolkit.py  # Testing utilities
+│   ├── sleeper_api_explorer.py     # API exploration tools
+│   ├── analytics_dashboard.py      # Analytics dashboard
+│   ├── apple_shortcuts.py          # Apple Shortcuts integration
+│   ├── sms_notifications.py        # SMS notifications
+│   ├── discord_notifications.py   # Discord notifications
+│   ├── slack_notifications.py      # Slack notifications
+│   ├── email_to_sms.py             # Email to SMS bridge
+│   ├── export_results.py           # Results export utilities
+│   └── secure_config.py             # Secure configuration
+├── tests/                           # Test files and debugging scripts
+│   ├── test_*.py                   # Unit tests
+│   ├── debug_*.py                  # Debugging scripts
+│   └── example_*.py                # Example usage scripts
+├── data/                            # Data files
+│   ├── skins_game_results.json     # Main results storage
+│   ├── league_info.json            # League configuration
+│   ├── users.json                  # User data
+│   ├── rosters.json                # Roster data
+│   ├── week_*_*.json               # Weekly data files
+│   └── *.xlsx                      # Excel data files
+├── outputs/                         # All output files organized by type
+│   ├── analytics/                  # Analytics charts and reports
+│   │   ├── *.png                   # Generated charts
+│   │   └── performance_summary.txt # Performance summaries
+│   ├── exports/                    # CSV/XLSX export files
+│   │   ├── *.csv                   # CSV exports
+│   │   └── *.xlsx                  # Excel exports
+│   └── test_charts/                # Test chart outputs
+│       └── test_*.png              # Test charts
+├── shortcuts/                       # Apple Shortcuts JSON files
+│   ├── shortcuts_data.json         # Current week data
+│   ├── shortcuts_sample.json       # Sample data for testing
+│   ├── shortcuts_real.json         # Real league results
+│   └── shortcuts_week1.json        # Week 1 data
+├── docs/                            # Documentation
+│   ├── README_MVP.md               # MVP documentation
+│   ├── README_Weekly_Runner.md     # Weekly runner guide
+│   ├── ANALYTICS_DASHBOARD.md      # Analytics dashboard guide
+│   ├── APPLE_SHORTCUTS_SETUP.md    # Apple Shortcuts setup
+│   ├── IPHONE_IMESSAGE_INTEGRATION.md # iPhone integration guide
+│   └── SMS_NOTIFICATIONS.md        # SMS notifications guide
+├── examples/                        # Example data and exports
+│   ├── data/                       # Example data files
+│   └── exports/                     # Example export files
+├── backups/                         # Backup files
 │   └── skins_game_results_backup_*.json
-├── main.py                       # Main entry point
-└── README.md                     # This file
+├── config/                          # Configuration files
+│   └── env.template                # Environment template
+├── requirements.txt                 # Python dependencies
+├── setup.py                        # Package setup
+├── LICENSE                         # License file
+├── CONTRIBUTING.md                 # Contributing guidelines
+├── PRIVACY.md                      # Privacy policy
+├── SECURITY.md                     # Security policy
+└── README.md                       # This file
 ```
 
 ## Quick Start
@@ -48,22 +90,22 @@ pickem_fantasy_automation/
 
 ```bash
 # Process the previous week automatically
-python main.py
+python scripts/main.py
 
 # Process a specific week
-python main.py 5
+python scripts/main.py 5
 
 # Check current status
-python main.py status
+python scripts/main.py status
 
 # View all results
-python main.py view
+python scripts/main.py view
 
 # View season summary
-python main.py summary
+python scripts/main.py summary
 
 # Export season report to CSV/Excel
-python main.py export
+python scripts/main.py export
 ```
 
 ### Programmatic Usage
@@ -166,10 +208,10 @@ pickem_fantasy_automation/
 
 ## Export Files
 
-The system automatically generates comprehensive reports in the `exports/` directory:
+The system automatically generates comprehensive reports in the `outputs/exports/` directory:
 
-- `exports/skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
-- `exports/skins_game_season_report.xlsx`: Excel format with multiple sheets:
+- `outputs/exports/skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
+- `outputs/exports/skins_game_season_report.xlsx`: Excel format with multiple sheets:
   - **Weekly_Breakdown**: Week-by-week winners, scores, and perfect weeks
   - **Season_Scores**: Complete season scores for all users with rankings
   - **User_Picks**: Individual user picks (when available)

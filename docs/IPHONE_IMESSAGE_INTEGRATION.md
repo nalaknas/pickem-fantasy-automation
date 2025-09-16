@@ -36,7 +36,7 @@ TWILIO_TO_NUMBERS=+1234567890,+0987654321,+15551234567
 ```bash
 python3 src/apple_shortcuts.py
 ```
-This creates `shortcuts_data.json` with formatted results.
+This creates `shortcuts/shortcuts_data.json` with formatted results.
 
 #### **Step 2: Create Apple Shortcut**
 1. **Open Shortcuts app** on your iPhone

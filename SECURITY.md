@@ -35,7 +35,7 @@ The following sensitive information is now secured:
 1. Run `python scripts/setup.py` to create secure configuration
 2. Enter your Sleeper League ID when prompted
 3. Optionally configure Twilio for notifications
-4. Verify setup with `python main.py status`
+4. Verify setup with `python scripts/main.py status`
 
 ### ✅ Before Making Repository Public
 1. Ensure `.env` file exists and contains your data
@@ -66,7 +66,7 @@ grep -r "1267183695911976960" src/ tests/ || echo "✅ No hardcoded league IDs f
 ### Test Functionality
 ```bash
 # Test basic functionality
-python main.py status
+python scripts/main.py status
 
 # Test with environment variables
 python -c "from src.skins_game_mvp import SleeperSkinsGameMVP; s = SleeperSkinsGameMVP(); print('✅ MVP initialized securely')"
@@ -129,7 +129,7 @@ If you're upgrading from a version with hardcoded league IDs:
 1. **Backup your data** (just in case)
 2. **Run the setup script**: `python scripts/setup.py`
 3. **Enter your league ID** when prompted
-4. **Test functionality**: `python main.py status`
+4. **Test functionality**: `python scripts/main.py status`
 5. **Remove old hardcoded values** (already done in this version)
 
 Your data and functionality remain exactly the same - only the security has been improved!

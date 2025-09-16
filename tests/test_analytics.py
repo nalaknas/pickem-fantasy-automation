@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 
 # Add src directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from analytics_dashboard import SleeperAnalyticsDashboard
 
@@ -64,7 +64,7 @@ def test_chart_generation():
         dashboard.calculate_league_analytics()
         
         # Test each chart type
-        test_dir = "test_charts"
+        test_dir = "outputs/test_charts"
         os.makedirs(test_dir, exist_ok=True)
         
         print("   • Testing weekly trends chart...")

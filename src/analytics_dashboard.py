@@ -437,7 +437,7 @@ class SleeperAnalyticsDashboard:
             "next_week": next_week
         }
     
-    def generate_full_dashboard(self, output_dir: str = "analytics_output") -> None:
+    def generate_full_dashboard(self, output_dir: str = "outputs/analytics") -> None:
         """Generate complete analytics dashboard with all charts and summary"""
         import os
         
