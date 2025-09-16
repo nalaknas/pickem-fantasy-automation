@@ -6,6 +6,8 @@ Provides comprehensive analytics and insights for league performance
 import requests
 import json
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
@@ -70,7 +72,11 @@ class SleeperAnalyticsDashboard:
         self.league_analytics = None
         
         # Set up plotting style
-        plt.style.use('seaborn-v0_8')
+        try:
+            plt.style.use('seaborn-v0_8')
+        except OSError:
+            # Fallback for older seaborn versions
+            plt.style.use('seaborn')
         sns.set_palette("husl")
     
     def get_league_info(self) -> dict:
