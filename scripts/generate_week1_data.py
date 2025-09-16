@@ -55,6 +55,7 @@ def main():
     formatted_data = integration.format_for_shortcuts(week1_results)
     
     # Save to file
+    os.makedirs('shortcuts', exist_ok=True)
     with open('shortcuts/shortcuts_week1.json', 'w') as f:
         json.dump(formatted_data, f, indent=2)
     

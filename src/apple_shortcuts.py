@@ -162,6 +162,9 @@ class AppleShortcutsIntegration:
         try:
             data = self.create_shortcuts_data(use_sample)
             
+            # Ensure the directory exists
+            os.makedirs(os.path.dirname(output_file), exist_ok=True)
+            
             with open(output_file, 'w') as f:
                 json.dump(data, f, indent=2)
             
@@ -177,6 +180,9 @@ class AppleShortcutsIntegration:
         try:
             # Format the specific result data
             data = self.format_for_shortcuts(result)
+            
+            # Ensure the directory exists
+            os.makedirs(os.path.dirname(output_file), exist_ok=True)
             
             with open(output_file, 'w') as f:
                 json.dump(data, f, indent=2)
