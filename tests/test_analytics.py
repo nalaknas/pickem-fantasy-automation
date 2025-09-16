@@ -64,7 +64,7 @@ def test_chart_generation():
         dashboard.calculate_league_analytics()
         
         # Test each chart type
-        test_dir = "test_charts"
+        test_dir = "outputs/test_charts"
         os.makedirs(test_dir, exist_ok=True)
         
         print("   • Testing weekly trends chart...")

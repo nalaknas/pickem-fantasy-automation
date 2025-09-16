@@ -55,10 +55,10 @@ def main():
     formatted_data = integration.format_for_shortcuts(week1_results)
     
     # Save to file
-    with open('shortcuts_week1.json', 'w') as f:
+    with open('shortcuts/shortcuts_week1.json', 'w') as f:
         json.dump(formatted_data, f, indent=2)
     
-    print(f"✅ Week 1 data saved to shortcuts_week1.json")
+    print(f"✅ Week 1 data saved to shortcuts/shortcuts_week1.json")
     
     # Show preview
     print(f"\n📝 Message preview:")
@@ -67,7 +67,7 @@ def main():
     print("-" * 40)
     
     print(f"\n📱 Next steps:")
-    print(f"1. Transfer shortcuts_week1.json to your iPhone")
+    print(f"1. Transfer shortcuts/shortcuts_week1.json to your iPhone")
     print(f"2. Run your Apple Shortcut")
     print(f"3. Send to your group chat")
 

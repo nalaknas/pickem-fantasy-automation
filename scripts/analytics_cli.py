@@ -55,8 +55,8 @@ Examples:
     parser.add_argument(
         '--output-dir',
         type=str,
-        default='analytics_output',
-        help='Output directory for generated files (default: analytics_output)'
+        default='outputs/analytics',
+        help='Output directory for generated files (default: outputs/analytics)'
     )
     
     parser.add_argument(

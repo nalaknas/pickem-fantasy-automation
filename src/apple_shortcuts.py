@@ -157,7 +157,7 @@ class AppleShortcutsIntegration:
         
         return self.format_for_shortcuts(latest_result)
     
-    def save_shortcuts_data(self, output_file: str = "shortcuts_data.json", use_sample: bool = False) -> bool:
+    def save_shortcuts_data(self, output_file: str = "shortcuts/shortcuts_data.json", use_sample: bool = False) -> bool:
         """Save formatted data for Apple Shortcuts"""
         try:
             data = self.create_shortcuts_data(use_sample)
@@ -198,7 +198,7 @@ def main():
     
     # Test with sample data first
     print("\n🧪 Testing with sample data...")
-    if integration.save_shortcuts_data("shortcuts_sample.json", use_sample=True):
+    if integration.save_shortcuts_data("shortcuts/shortcuts_sample.json", use_sample=True):
         print("\n📝 Sample data for Apple Shortcuts:")
         
         data = integration.create_shortcuts_data(use_sample=True)
@@ -211,7 +211,7 @@ def main():
     
     # Test with real data
     print("\n📊 Testing with real data...")
-    if integration.save_shortcuts_data("shortcuts_real.json", use_sample=False):
+    if integration.save_shortcuts_data("shortcuts/shortcuts_real.json", use_sample=False):
         data = integration.create_shortcuts_data(use_sample=False)
         if 'error' not in data:
             print(f"Week: {data['week']}")
@@ -224,11 +224,11 @@ def main():
             print(f"Error: {data['error']}")
     
     print(f"\n📱 Next steps for iPhone setup:")
-    print(f"1. Transfer shortcuts_sample.json to your iPhone")
+    print(f"1. Transfer shortcuts/shortcuts_sample.json to your iPhone")
     print(f"2. Create an Apple Shortcut that reads this file")
     print(f"3. Use 'Send Message' action to send to your group chat")
     print(f"4. Run the shortcut whenever you want to send results")
-    print(f"\n💡 Use shortcuts_sample.json for testing, shortcuts_real.json for actual results")
+    print(f"\n💡 Use shortcuts/shortcuts_sample.json for testing, shortcuts/shortcuts_real.json for actual results")
 
 
 if __name__ == "__main__":

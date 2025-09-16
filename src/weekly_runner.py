@@ -152,8 +152,8 @@ def main():
             print(f"\n📱 Generating Apple Shortcuts data for Week {target_week}...")
             from .apple_shortcuts import AppleShortcutsIntegration
             shortcuts = AppleShortcutsIntegration()
-            shortcuts.save_shortcuts_data_for_week("shortcuts_data.json", target_week, result)
-            print(f"✅ Data saved to shortcuts_data.json")
+            shortcuts.save_shortcuts_data_for_week("shortcuts/shortcuts_data.json", target_week, result)
+            print(f"✅ Data saved to shortcuts/shortcuts_data.json")
             print(f"📱 Transfer this file to your iPhone and run your shortcut!")
         elif choice == "1" and not has_sms:
             print(f"❌ SMS not configured. Use option 2 for Apple Shortcuts instead.")

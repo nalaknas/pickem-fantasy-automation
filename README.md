@@ -166,10 +166,10 @@ pickem_fantasy_automation/
 
 ## Export Files
 
-The system automatically generates comprehensive reports in the `exports/` directory:
+The system automatically generates comprehensive reports in the `outputs/exports/` directory:
 
-- `exports/skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
-- `exports/skins_game_season_report.xlsx`: Excel format with multiple sheets:
+- `outputs/exports/skins_game_season_report.csv`: CSV format with weekly breakdown and season scores
+- `outputs/exports/skins_game_season_report.xlsx`: Excel format with multiple sheets:
   - **Weekly_Breakdown**: Week-by-week winners, scores, and perfect weeks
   - **Season_Scores**: Complete season scores for all users with rankings
   - **User_Picks**: Individual user picks (when available)
