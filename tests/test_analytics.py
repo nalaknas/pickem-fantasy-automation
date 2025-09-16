@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 
 # Add src directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from analytics_dashboard import SleeperAnalyticsDashboard
 

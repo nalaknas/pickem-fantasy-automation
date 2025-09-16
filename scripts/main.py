@@ -7,7 +7,7 @@ import sys
 import os
 
 # Add src directory to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.weekly_runner import main as run_weekly, quick_status
 from src.view_results import view_results, view_season_summary
